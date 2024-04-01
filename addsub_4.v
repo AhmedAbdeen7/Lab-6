@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/01/2024 10:20:39 PM
+// Create Date: 04/01/2024 11:05:15 PM
 // Design Name: 
-// Module Name: rca_8
+// Module Name: addsub_4
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module rca_8(
-
+module addsub_4(
+    input [3:0] A,
+    input [3:0] B,
+    input sub,
+    output cout,
+    output [3:0]s
     );
+    
+    rca_4 rc (.A({A[0]^sub, A[1]^sub, A[2]^sub, A[3]^sub}), .B(B[3:0]), .Cin(sub), .sum(s), .cout(cout));
+    
+    
 endmodule

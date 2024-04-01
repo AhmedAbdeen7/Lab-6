@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 04/01/2024 10:20:39 PM
+// Create Date: 04/01/2024 10:21:25 PM
 // Design Name: 
-// Module Name: rca_8
+// Module Name: rca_8_2
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module rca_8(
+module rca_8_2(
 
     );
 endmodule
